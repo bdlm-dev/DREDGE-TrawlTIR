@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net48</TargetFramework>
+		<AssemblyName>TrawlTIR</AssemblyName>
+		<Description>Makes Iron Rig Fish trawlable</Description>
+		<Version>0.0.1</Version>
+		<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <Optimize>True</Optimize>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DredgeGameLibs" Version="1.5.3" />
+		<PackageReference Include="Winch" Version="0.6.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="mod_meta.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>

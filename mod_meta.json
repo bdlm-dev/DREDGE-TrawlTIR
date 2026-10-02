@@ -1,0 +1,10 @@
+{
+    "Author": "mmbluey",
+    "Name": "Trawl Iron Rig Fish",
+    "ModGUID": "mmbluey.trawltir",
+    "ModAssembly": "TrawlTIR.dll",
+    "Entrypoint": "TrawlTIR.Loader/Initialize",
+    "Version": "1.0.0",
+    "MinWinchVersion": "0.4.0",
+    "ApplyPatches": false
+}
