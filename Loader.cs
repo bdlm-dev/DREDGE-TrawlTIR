@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -70,6 +70,9 @@ namespace TrawlTIR
                     var arr = (HarvestableItemData[])cloneHZ.harvestableItems.Clone();
                     arr.SetValue(fishData, 0);
                     cloneHZ.harvestableItems = arr;
+
+                    cloneHZ.day = true;
+                    cloneHZ.night = true;
 
                     WinchCore.Log.Debug("Created " + id + " from " + matchingSourceHZ.gameObject.name + " (" + fishZone + ")");
                 }
